@@ -1,0 +1,23 @@
+:host {
+  height: 100%;
+  width: 100%;
+}
+.mycontainer {
+  background-color: rgb(175, 159, 159);
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  //align-items: center;
+}
+.image-block {
+  width: auto;
+  margin: 5% 5% 5% 5%;
+}
+.image {
+  max-width: 30vw;
+}

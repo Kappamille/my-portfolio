@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0px;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import url("http://fonts.cdnfonts.com/css/tt-norms-pro");

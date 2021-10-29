@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="text-select display-4">
+    Please select some tags to filter projects:
+  </h1>
+
+  <div class="container-btn">
+    <button
+      class="ds"
+      (click)="selectUserTags('Data Science')"
+      [ngClass]="this.mytags[0].style"
+    >
+      Data Science
+    </button>
+    <button
+      class="t"
+      (click)="selectUserTags('Teaching')"
+      [ngClass]="this.mytags[1].style"
+    >
+      Teaching
+    </button>
+    <button
+      class="wip"
+      (click)="selectUserTags('Work in Progress')"
+      [ngClass]="this.mytags[2].style"
+    >
+      Work in Progress
+    </button>
+  </div>
+</div>
+<div class="container-projects">
+  <app-project-card
+    *ngFor="let p of this.userProjectList"
+    [project]="p"
+    (click)="openModal(p)"
+  ></app-project-card>
+</div>
+<app-project-modal
+  *ngIf="this.activeModal"
+  [project]="this.clickedProject"
+  (closingEmitter)="this.closeModal($event)"
+></app-project-modal>
