@@ -16,23 +16,23 @@
         lonely ?
       </div>
       <div class="icons-container">
-        <button class="icon">
+        <button class="icon" (click)="this.redirect('mail')">
           <img src="../assets/Mail.svg" alt="Mail icon" class="img-icon" />
         </button>
-        <button class="icon">
+        <button class="icon" (click)="this.redirect('linkedin')">
           <img
             src="../assets/Linkedin.svg"
             alt="Linkedin icon"
             class="img-icon"
           />
         </button>
-        <button class="icon">
+        <button class="icon" (click)="this.redirect('github')">
           <img src="../assets/Github.svg" alt="Github icon" class="img-icon" />
         </button>
-        <button class="icon">
+        <button class="icon" (click)="this.redirect('kaggle')">
           <img src="../assets/Kaggle.svg" alt="Kaggle icon" class="img-icon" />
         </button>
-        <button class="icon">
+        <button class="icon" (click)="this.redirect('stackoverflow')">
           <img
             src="../assets/StackOverflow.svg"
             alt="StackOverflow icon"
