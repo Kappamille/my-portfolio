@@ -12,11 +12,28 @@
     margin-bottom: 1rem;
   }
 }
-
-.jumbotron {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2.5rem;
+.title-img {
+  height: 85px;
+}
+.title {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1rem;
+  font-style: bold;
+  font-weight: bolder;
+  font-size: 70px;
+  color: rgba(1, 167, 191, 1);
+  font-family: "TT Norms Pro", sans-serif;
+  text-align: center;
+}
+.subtitle {
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+  font-family: "TT Norms Pro", sans-serif;
+  color: grey;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .container-btn {
@@ -24,7 +41,15 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0px 20px 0px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  //margin: 20px 0px 20px 0px;
+  background-color: rgba(1, 167, 191, 1);
+  border-radius: 30px;
+  gap: 20px;
   @media (max-width: 500px) {
     flex-direction: column;
     justify-content: space-evenly;
@@ -43,41 +68,28 @@
 }
 
 .button {
-  border-radius: 5px;
+  //border-radius: 5px;
   font-family: "TT Norms Pro", sans-serif;
-  color: black;
+  color: white;
   font-size: 20px;
   opacity: 1;
-  background: rgb(173, 173, 173);
-  border-color: rgb(41, 41, 41);
-  border-width: 1px;
-  margin: 0px 20px 0px 20px;
-  padding: 10 10 10 10;
+  background: transparent;
+  //border-color: rgb(41, 41, 41);
+  border-width: 0px;
+  //margin: 0px 20px 0px 20px;
+  //padding: 10 10 10 10;
 }
 .button:hover {
-  background: rgb(224, 223, 223);
+  font-weight: bold;
+  text-decoration: underline;
 }
 .buttonclicked {
-  border-radius: 5px;
   font-family: "TT Norms Pro", sans-serif;
-  color: black;
+  color: white;
   font-size: 20px;
   opacity: 1;
-  border-width: 1px;
-  //background: rgb(240, 160, 160);
-  border-color: rgb(41, 41, 41);
-  margin: 0px 20px 0px 20px;
-  padding: 10 10 10 10;
-}
-
-.buttonclicked.ds {
-  background: rgb(221, 159, 226);
-}
-
-.buttonclicked.t {
-  background: rgb(178, 146, 230);
-}
-
-.buttonclicked.wip {
-  background: rgb(141, 147, 241);
+  background: transparent;
+  text-decoration: underline;
+  border-width: 0px;
+  font-weight: bold;
 }

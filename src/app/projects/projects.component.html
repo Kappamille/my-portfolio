@@ -1,32 +1,31 @@
 <app-header></app-header>
-<div class="jumbotron jumbotron-fluid">
-  <h1 class="text-select display-4">
-    Please select some tags to filter projects:
-  </h1>
-
-  <div class="container-btn">
-    <button
-      class="ds"
-      (click)="selectUserTags('Data Science')"
-      [ngClass]="this.mytags[0].style"
-    >
-      Data Science
-    </button>
-    <button
-      class="t"
-      (click)="selectUserTags('Teaching')"
-      [ngClass]="this.mytags[1].style"
-    >
-      Teaching
-    </button>
-    <button
-      class="wip"
-      (click)="selectUserTags('Work in Progress')"
-      [ngClass]="this.mytags[2].style"
-    >
-      Work in Progress
-    </button>
-  </div>
+<h5 class="title">
+  <img src="../assets/Projects.svg" alt=" Project title" class="title-img" />
+</h5>
+<p class="subtitle">
+  These are projects that I carried out in my free time and in professional
+  contexts.
+</p>
+<p class="subtitle">
+  Since my projects are very interdisciplinary you can filter them by selecting
+  the relevant tags
+</p>
+<div class="container-btn">
+  <button
+    (click)="selectUserTags('Data Science')"
+    [ngClass]="this.mytags[0].style"
+  >
+    DATA SCIENCE
+  </button>
+  <button (click)="selectUserTags('Teaching')" [ngClass]="this.mytags[1].style">
+    TEACHING
+  </button>
+  <button
+    (click)="selectUserTags('Work in Progress')"
+    [ngClass]="this.mytags[2].style"
+  >
+    WORK IN PROGRESS
+  </button>
 </div>
 <div class="container-projects">
   <app-project-card

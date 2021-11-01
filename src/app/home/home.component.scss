@@ -6,7 +6,7 @@
   right: 10%;
   top: 30%;
   padding: 20px 30px 20px 30px;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 20px 20px 20px 20px;
   //text-align: center;
   @media (max-width: 500px) {
@@ -64,7 +64,7 @@
 }
 
 .btn {
-  border-radius: 30px;
+  border-radius: 10px;
   font-family: "TT Norms Pro", sans-serif;
   color: black;
   //font-size: 25px;
@@ -81,7 +81,7 @@
 }
 
 .btn:hover {
-  border-radius: 30px;
+  border-radius: 10px;
   font-family: "TT Norms Pro", sans-serif;
   color: black;
   //font-size: 25px;
@@ -89,6 +89,8 @@
   opacity: 1;
   background: rgba(1, 167, 191, 1);
   border-color: rgba(1, 167, 191, 1);
+  //background: rgba(255, 158, 39, 1);
+  //border-color: rgba(255, 158, 39, 1);
   @media (max-width: 500px) {
     padding: 3px 9px 3px 9px;
   }

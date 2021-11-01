@@ -22,11 +22,7 @@
       <p class="card-description">{{ project.description }}</p>
       <p class="card-date">01.02.1999</p>
       <div class="tag-container">
-        <p
-          *ngFor="let tag of project.tags"
-          class="card-text tags card-tags"
-          [style.background]="this.adaptColor(tag)"
-        >
+        <p *ngFor="let tag of project.tags" class="tags card-tags">
           {{ tag }}
         </p>
       </div>
