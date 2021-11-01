@@ -1,11 +1,11 @@
-:host:hover {
+.card {
+  border-radius: 13px;
+}
+.card:hover {
   opacity: 0.9;
   box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.3);
   border-radius: 13px;
   cursor: pointer;
-}
-.card {
-  border-radius: 13px;
 }
 .card-img-top {
   border-top-left-radius: 13px;

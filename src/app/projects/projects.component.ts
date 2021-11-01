@@ -1,4 +1,5 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
+import { MYTAGS, PROJECT_LIST } from '../content';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 import {
@@ -34,20 +35,22 @@ import {
   },
 ];
 */
-export const MYTAGS = [
+/*export const MYTAGS = [
   { text: 'Data Science', clicked: false, style: 'button' },
   { text: 'Teaching', clicked: false, style: 'button' },
   { text: 'Work in Progress', clicked: false, style: 'button' },
-];
+];*/
 
 export interface project {
   title: string;
   description: string;
+  image: string;
+  date: string;
   link: string;
   tags: string[];
 }
 
-export const PROJECT_LIST = [
+/*export const PROJECT_LIST = [
   {
     title: 'Title 1',
     description: 'description 1',
@@ -66,7 +69,7 @@ export const PROJECT_LIST = [
     link: '',
     tags: ['Teaching'],
   },
-];
+];*/
 
 @Component({
   selector: 'app-projects',
